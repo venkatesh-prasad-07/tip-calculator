@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="App.js" defer></script>
+    <script src="https://kit.fontawesome.com/4d129299c7.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div>
+          <h1 class="heading">TIP CALCULATOR</h1><br>
+        </div>
+        <div class="bill">
+          <div class="bill-left">
+            <div>
+              <h2>Bill</h2>
+              <div class="bill-leftInput">
+                <i class="fa fa-inr" aria-hidden="true"></i>
+                <input type="tel" id="billAmount" required autocomplete="off" />
+              </div>
+            </div>
+
+            <div>
+              <h2>Select Tip %</h2>
+              <div class="bill-leftButtons">
+                <button class="tipPercentage">5%</button>
+                <button class="tipPercentage">10%</button>
+                <button class="tipPercentage">15%</button>
+                <button class="tipPercentage">25%</button>
+                <button class="tipPercentage">50%</button>
+                <input
+                  type="tel"
+                  id="tipPercentageCustom"
+                  placeholder="Custom"
+                  
+                />
+              </div>
+            </div>
+
+            <div>
+              <h2>Number Of People</h2>
+
+              <div class="bill-leftInput">
+                <i class="fas fa-user"></i>
+                <input type="number" id="totalPeople" min="1" required />
+              </div>
+            </div>
+          </div>
+          <div class="bill-right">
+            <div>
+              <div class="bill-splitter">
+                <h2>
+                  Tip Amount <br />
+                  <span>/ person</span>
+                </h2>
+                <h1 id="billTipAmount"><i class="fa fa-inr" aria-hidden="true"></i> 0.00</h1>
+              </div>
+
+              <div class="bill-splitter">
+                <h2>
+                  Total <br />
+                  <span>/ person</span>
+                </h2>
+                <h1 id="billTotalPerPerson"><i class="fa fa-inr" aria-hidden="true"></i> 0.00</h1>
+              </div>
+            </div>
+            <div>
+              <button type="reset" id="resetButton">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    <h1 class = "footr">- By Venkatesh Prasad</h1><br><br>
+  </body>
+</html>
